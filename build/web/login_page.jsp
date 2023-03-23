@@ -34,21 +34,20 @@
                             </div>
 
                             <div class="card-body">
-                                <form>
+                                <form action="LoginServlet" method="post">
                                 <div class="mb-3">
                                   <label for="user_email" class="form-label">Email address</label>
-                                  <input type="email" class="form-control" id="user_email" name="user_email" aria-describedby="emailHelp">
+                                  <input type="email" class="form-control" id="user_email" name="user_email" aria-describedby="emailHelp" required>
                                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                 </div>
                                 <div class="mb-3">
                                   <label for="user_password" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="user_password" name="user_password">
+                                  <input type="password" class="form-control" id="user_password" name="user_password" required>
                                 </div>
-                                <div class="mb-3 form-check">
-                                    <input type="checkbox" class="form-check-input" id="ckeck" name="check">
-                                  <label class="form-check-label" for="check">Remember me</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <div class="container text-center">
+                                    <button type="submit" class="btn btn-primary">Log In</button>
+                                </div> 
+                                
                               </form>
                             </div>
                         </div>

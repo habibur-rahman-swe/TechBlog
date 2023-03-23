@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Register Page</title>
         
-         <!--css-->
+        <!--css-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"><!-- comment -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="CSS/mystyle.css" rel="stylesheet" type="text/css"/>
@@ -54,8 +54,8 @@
                                     </div>
                                   
                                     <div class="form-floating mb-1">
-                                        <textarea class="form-control form-control-sm" placeholder="Something about yourself" id="about" rows="3" name="about"></textarea>
-                                        <label for="about">About</label>
+                                        <textarea class="form-control form-control-sm" placeholder="Something about yourself" id="about_user" rows="3" name="about_user"></textarea>
+                                        <label for="about_user">About</label>
                                     </div>
                                 
                                     <div class="mb-1 form-check">
@@ -116,7 +116,7 @@
                       error: function(jqXHR, textStatus, errorThrown) {
                           $('#submit-btn').show();
                           $('loader').hide();
-                          swal("Something Wrong! Try again...")
+                          swal("Something Wrong! Try again...");
                       },
                       processData: false,
                       contentType: false
